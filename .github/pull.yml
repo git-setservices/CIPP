@@ -1,8 +1,11 @@
 version: "1"
 rules:
-  - base: CIPP
-    upstream: git-setservices:CIPP
+  - base: main
+    upstream: KelvinTegelaar:main
     mergeMethod: merge
-  - base: CIPP-API
-    upstream: git-setservices:CIPP-API
+  - base: dev
+    upstream: KelvinTegelaar:dev
+    mergeMethod: none
+  - base: website
+    upstream: KelvinTegelaar:website
     mergeMethod: merge
